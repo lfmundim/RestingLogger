@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>lfmundim, andreminelli</Authors>
+    <Company />
+    <Description>Creates a (Serilog) Log-Enabled (RestEase) RESTful HttpClient that fully logs requests and responses. Requests and Responses can be matched by using the "Id" in the logs</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestEase" Version="1.4.7" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
