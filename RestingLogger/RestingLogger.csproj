@@ -5,6 +5,8 @@
     <Authors>lfmundim, andreminelli</Authors>
     <Company />
     <Description>Creates a (Serilog) Log-Enabled (RestEase) RESTful HttpClient that fully logs requests and responses. Requests and Responses can be matched by using the "Id" in the logs</Description>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Fixed text on response logging</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
