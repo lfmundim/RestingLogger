@@ -38,12 +38,12 @@ namespace RestingLogger.Services
             {
                 var response = await base.SendAsync(request, cancellationToken);
                 content = await GetContentAsync(response.Content);
-                _logger.Information("Id: {@correlationId}\tRequest:{@response}, Content:{@content}", correlationId, response, content);
+                _logger.Information("Id: {@correlationId}\tResponse:{@response}, Content:{@content}", correlationId, response, content);
                 return response;
             }
             catch (Exception ex)
             {
-                _logger.Information(ex, $"Failed to get response: {ex}");
+                _logger.Warning(ex, $"Failed to get response: {ex}");
                 throw;
             }
         }
